@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 150px 0;
+            background: url("images/header.jpg") center/cover no-repeat;
+            color: #fff;
+        }
+
+        nav {
+            background-color: transparent;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            border-bottom: 5px solid #000000;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-top: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .action-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .action-buttons a {
+            display: inline-block;
+            color: #000000;
+            background-color: white;
+            padding: 20px 35px;
+            margin: 0 23px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #000000;
+        }
+
+        .action-buttons a:hover {
+            background-color: #fae77a;
+        }
+
+        .welcome {
+            font-size: 100px;
+            margin-bottom: 50px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #activityheader {
+            font-size: 50px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 30px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .gallery-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            margin: 50px 0;
+        }
+
+        .gallery-item img {
+            width: 50%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;;
+            margin-right: 20px;
+        }
+
+        .gallery-item-description {
+            flex: 1;
+        }
+        footer {
+            background-color: #f6ff41b4;
+            color: #000000;
+            text-align: center;
+            padding: 10px 75px;
+            bottom: 0;
+            width: 90%;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="welcome">Welcome to Bohol</h1>
+        <nav>
+            <a href="welcomepage.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <div class="action-buttons">
+            <a href="touristspot.html">Top 10 Tourist Spots</a>
+            <a href="activities.html">Activities</a>
+        </div>
+    </header>
+
+    <section class="head">
+        <h2 id="activityheader">Activities in Bohol</h2>
+        <div class="gallery-item">
+            <img src="images/chocolate.jfif" alt="Chocolate Hills">
+            <div class="gallery-item-description">
+                <h2 style=" font-size: 35px;">Marvel at the Chocolate Hills</h2>
+                <p>No other attraction is as synonymous with Bohol as the Chocolate Hills. This geological formation is the island province’s crowning jewel and showstopper, with more than 1000 cone-shaped karst hills that turn into chocolate brown color during the dry season, thus the name. During the rainy season, they then become covered with emerald green vegetation, which is also an equally wonderful sight.
+
+                The Chocolate Hills has been awarded the Philippines 3rd National Geological Monument, and others swear by it being an Eighth Wonder of the World.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/tarsier.jpg" alt="Tarsier Sanctuary">
+            <div class="gallery-item-description">
+                <h2 style=" font-size: 35px;">Take a Trip to the Tarsier Sanctuary</h2>
+                <p>Cute is probably an understatement when talking about tarsiers. These nocturnal creatures have big eyes, yet they hold the title of being the smallest primates in the world. No trip to Bohol is complete without taking the chance to see tarsiers up close and personal in their natural habitat, which is usually included in a Bohol countryside tour. </p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/floating.jpg" alt="Floating Restaurant">
+            <div class="gallery-item-description">
+                <h2 style=" font-size: 35px;">Enjoy the Loboc River Cruise</h2>
+                <p>Loboc River is one of Bohol’s most recognizable tourist spots and wondrous natural attractions. It features blue-green waters surrounded by lush trees and palms from both sides.
+
+                This destination is best enjoyed and appreciated by joining Loboc River Cruise tours, where visitors board on a floating restaurant and enjoy a bountiful buffet feast to the fun and mesmerizing singing of a local folk band. They may also perform traditional dances to the delight of everyone on board. The mesmerizing Busay Falls, albeit small, will mark the end of the cruise.
+                    
+                You might also spot local kids hanging on to palm trees and plunging straight into the waters, and adults swimming or working by the river.  </p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/balicasag.jpg" alt="Tarsier Sanctuary">
+            <div class="gallery-item-description">
+                <h2 style=" font-size: 35px;">Do the Island Hopping Tour of Balicasag, Pamilacan, and Virgin Islands</h2>
+                <p>Book or join an island hopping tour around Bohol and explore the marine life beneath the islands' glass-like waters. The province features numerous prime and world-class Bohol diving spots like Balicasag Island.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/manmade.jfif" alt="Tarsier Sanctuary">
+            <div class="gallery-item-description">
+                <h2 style=" font-size: 35px;">Take Photos at Bilar Man-Made Forest</h2>
+                <p>The Bilar Man-Made Forest features towering white and red mahogany trees that make up a 2-kilometer forest from both sides of the road. The man-made forest is part of a reforestation project to protect the Loboc watershed.
+
+                The trees’ branches and leaves form an overhanging carpet, almost entirely blocking the sun’s heat and providing a much cooler breeze the entire day. This area has become a favorite stop for travelers doing the Bohol Countryside tours, posing in the middle of the road with the forest as the background.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/alonabeach.jpg" alt="Tarsier Sanctuary">
+            <div class="gallery-item-description">
+                <h2 style=" font-size: 35px;">Lounge at the Beaches</h2>
+                <p>Bohol is a beach-lover’s paradise, with bountiful coastlines and gorgeous beaches all over the province. Perhaps the most popular among them all is Alona Beach in Panglao Island, which features a long stretch of white sand beach lined with opulent resorts in Bohol, dining establishments, and entertainment bars. 
+
+                An alternative is the more laidback Dumaluan Beach. It usually has fewer visitors and there are lesser establishments around. The sunset is not to be missed here!
+
+                For a more quiet and secluded beach time, head to Bagobo Beach and Momo Beach. Both offer beautiful and palm-fringed white-sand shores with small crowds. The former is a favorite spot for snorkelers and divers because of its bountiful waters teeming with marine life. </p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/hinagdanan.jpg" alt="Tarsier Sanctuary">
+            <div class="gallery-item-description">
+                <h2 style=" font-size: 35px;">Swim at Hinagdanan Cave</h2>
+                <p>The name Hinagdanan is derived from the Cebuano word that means “laddered”, as it is said to have been discovered by a farmer who built a ladder to enter the cave. Hinagdanan Cave features a sparkling natural pool at the bottom, where visitors can take a dip and swim into under stalactites and other surrounding interesting rock formations.
+
+                On a beautiful day with sunny weather, natural light passes through the cave entrance and hits the pool, offering an ethereal glow to the crystal-clear waters. Hinagdanan Cave tours can be done after your visit to the Chocolate Hills and other top Bohol attractions.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/anda.jpg" alt="Tarsier Sanctuary">
+            <div class="gallery-item-description">
+                <h2 style=" font-size: 35px;">Explore Anda's Attractions</h2>
+                <p>Bask under the sun and dip your toes in the fine sands of Anda’s expansive beach. This little town is fast becoming a favorite among locals and international travelers alike for its laid-back vibe and sheer beauty. Anda Beach, which stretches 1.5 kilometers long, may rival some of the country’s most popular beaches.
+
+                Anda tours also include a visit to its natural cave pools. One of which is Cabagnow Cave Pool, which offers visitors crystal-clear waters from its opening. Adventure seekers favor this spot for cliff-jumping, as its waters run around 20 feet deep.
+                    
+                The other famous cave pool here is called Combento, which means “convent” in English, named such because of the cave’s rock formations that resemble a chandelier. Although the pool here is much more shallow than Cabagnow at only 5-feet deep, Combento’s mystical charm is worth visiting.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        © 2024 Bohol Tourism. All rights reserved.
+    </footer>
+
+</body>
+</html>

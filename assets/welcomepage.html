@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 150px 0; 
+            background: url("images/header.jpg") center/cover no-repeat; 
+            color: #fff; 
+        }
+
+        nav {
+            background-color: transparent;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            border-bottom: 5px solid #000000;  
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-top: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s; 
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .action-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .action-buttons a {
+            display: inline-block;
+            color: #000000;
+            background-color: white;
+            padding: 20px 35px;
+            margin: 0 23px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #000000;
+        }
+
+        .action-buttons a:hover {
+            background-color: #fae77a;
+        }
+
+        .welcome{
+            font-size: 100px;
+            margin-bottom: 50px;
+            font-weight: bold;
+            color: white;
+
+        }
+        #gallery {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        #gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        #gallery img:hover {
+            transform: scale(1.1); 
+        }
+
+        #places-to-go-header {
+            font-size: 50px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #f6ff41b4;
+            color: #000000;
+            text-align: center;
+            padding: 10px 75px;
+            bottom: 0;
+            width: 90%;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="welcome">Welcome to Bohol</h1>
+        <nav>
+            <a href="welcomepage.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <div class="action-buttons">
+            <a href="touristspot.html">Top 10 Tourist Spots</a>
+            <a href="activities.html">Activities</a>
+        </div>
+    </header>
+    <section id="gallery">
+        <h2 id="places-to-go-header">Tourist Spot</h2>
+        <img src="images/balicasag.jpg" alt="1">
+        <img src="images/hinagdanan.jpg" alt="2">
+        <img src="images/tarsier.jpg" alt="3">
+        <img src="images/bloodcompact.jfif" alt="4">
+        <img src="images/chocolate.jfif" alt="5">
+        <img src="images/floating.jpg" alt="6">
+        <img src="images/firefly.jpg" alt="7">
+        <img src="images/hinagdanan.jpg" alt="8">
+        <img src="images/mirror.jfif" alt="9">
+        <img src="images/manmade.jfif" alt="10">
+        <img src="images/virgin island.jpeg" alt="11">
+        <img src="images/alonabeach.jpg" alt="11">
+        <img src="images/beefarm.jfif" alt="11">
+        <img src="images/anda.jpg" alt="11">
+        <img src="images/hanging.jpg" alt="11">
+        <img src="images/twinfalls.jpg" alt="11">
+    </section>
+    <footer>
+        © 2024 Bohol Tourism. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/css/splide.min.css">
+    <title> TOP 10 TOURIST SPOT </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 150px 0; 
+            background: url("images/header.jpg") center/cover no-repeat; 
+            color: #fff; 
+        }
+        nav {
+            background-color: transparent;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            border-bottom: 5px solid #000000;  
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-top: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s; 
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color:black;
+        }
+        
+        #main-carousel, #thumbnail-carousel {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .splide__slide {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .splide__slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #thumbnail-carousel {
+            margin-top: 20px;
+        }
+
+        #thumbnail-carousel .splide__slide {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #thumbnail-carousel .splide__slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .splide__slide.is-active,
+        #thumbnail-carousel .splide__slide.is-active {
+            transform: scale(1.1);
+        }
+
+        .welcome{
+            font-size: 100px;
+            margin-bottom: 50px;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        .action-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .action-buttons a {
+            display: inline-block;
+            color: #000000;
+            background-color: white;
+            padding: 20px 35px;
+            margin: 0 23px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #000000;
+        }
+
+        .action-buttons a:hover {
+            background-color: #fae77a;
+        }
+        .qwe{
+            text-align: center;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+        .splide__slide .slide-description {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #eff700;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 15px;
+        text-align: center;
+        opacity: 3;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    footer {
+            background-color: #f6ff41b4;
+            color: #000000;
+            text-align: center;
+            padding: 10px 75px;
+            bottom: 0;
+            width: 90%;
+            
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
+    <title>BOHOL TOURIST DESTINATIONS</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="welcome">Welcome to Bohol</h1>
+        <nav>
+            <a class="active" href="welcomepage.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <div class="action-buttons">
+            <a href="#topTouristSpots" onclick="smoothScroll('topTouristSpots')">Top 10 Tourist Spots</a>
+            <a href="activities.html">Activities</a>
+        </div>
+    </header>
+
+<section id="topTouristSpots">
+    <h1 class="qwe"> TOP 10 TOURIST SPOT IN BOHOL </h1>
+    <div id="main-carousel" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="images/chocolate.jfif" alt="balicasag">
+                    <div class="slide-description">
+                        <h3>#1</h3>
+                        <h2> Chocolate Hills </h2>
+                    </div>
+                </li>
+                <li class="splide__slide"><img src="images/tarsier.jpg" alt="firefly">
+                    <div class="slide-description">
+                        <h3>#2</h3>
+                        <h2> Tarsier Sanctuary </h2>
+                    </div>
+                </li>
+                <li class="splide__slide"><img src="images/floating.jpg" alt="hinagdanan">
+                    <div class="slide-description">
+                        <h3>#3</h3>
+                        <h2> Loboc River Cruise </h2>
+                    </div>
+                </li>
+                <li class="splide__slide"><img src="images/hinagdanan.jpg" alt="chocolate">
+                    <div class="slide-description">
+                        <h3>#4</h3>
+                        <h2> hinagdanan Cave </h2>
+                    </div>
+                </li>
+                <li class="splide__slide"><img src="images/manmade.jfif" alt="tarsier">
+                    <div class="slide-description">
+                        <h3>#5</h3>
+                        <h2> Man-made Forest </h2>
+                    </div>
+                </li>
+                <li class="splide__slide"><img src="images/balicasag.jpg" alt="virgin island">
+                    <div class="slide-description">
+                        <h3>#6</h3>
+                        <h2> Balicasag Island </h2>
+                    </div>
+                </li>
+                <li class="splide__slide"><img src="images/bloodcompact.jfif" alt="floating">
+                    <div class="slide-description">
+                        <h3>#7</h3>
+                        <h2> Blood Compact</h2>
+                    </div>
+                </li>
+                <li class="splide__slide"><img src="images/alonabeach.jpg" alt="alona">
+                    <div class="slide-description">
+                        <h3>#8</h3>
+                        <h2> Alona Beach Resort </h2>
+                    </div>
+                </li>
+                <li class="splide__slide"><img src="images/beefarm.jfif" alt="bloodcompact">
+                    <div class="slide-description">
+                        <h3>#9</h3>
+                        <h2> Bohol Bee Farm </h2>
+                    </div>
+                </li>
+                <li class="splide__slide"><img src="images/firefly.jpg" alt="mirror">
+                    <div class="slide-description">
+                        <h3>#10</h3>
+                        <h2> Firefly Watching </h2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="thumbnail-carousel" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="images/chocolate.jfif" alt="chocolate"></li>
+                <li class="splide__slide"><img src="images/tarsier.jpg" alt="tarsier"></li>
+                <li class="splide__slide"><img src="images/floating.jpg" alt="floating"></li>
+                <li class="splide__slide"><img src="images/hinagdanan.jpg" alt="hinagdanan"></li>
+                <li class="splide__slide"><img src="images/manmade.jfif" alt="manmade"></li>
+                <li class="splide__slide"><img src="images/balicasag.jpg" alt="balicasag"></li>
+                <li class="splide__slide"><img src="images/bloodcompact.jfif" alt="bloodcompact"></li>
+                <li class="splide__slide"><img src="images/alonabeach.jpg" alt="alonabeach"></li>
+                <li class="splide__slide"><img src="images/beefarm.jfif" alt="beefarm"></li>
+                <li class="splide__slide"><img src="images/firefly.jpg" alt="firefly"></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer>
+    © 2024 Bohol Tourism. All rights reserved.
+</footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var main = new Splide('#main-carousel', {
+                type: 'fade',
+                heightRatio: 0.5,
+                pagination: false,
+                arrows: false,
+                cover: true,
+                autoplay: true,
+                interval: 3000,
+                rewind: true,
+            });
+
+            var thumbnails = new Splide('#thumbnail-carousel', {
+                fixedWidth: 100,
+                fixedHeight: 64,
+                isNavigation: true,
+                gap: 10,
+                focus: 'center',
+                pagination: false,
+                arrows: true,
+                cover: true,
+                breakpoints: {
+                    600: {
+                        fixedWidth: 66,
+                        fixedHeight: 40,
+                    }
+                }
+            });
+
+            main.sync(thumbnails);
+            main.mount();
+            thumbnails.mount();
+        });
+
+        function smoothScroll(targetId) {
+            var targetElement = document.getElementById(targetId);
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>
